@@ -1,6 +1,6 @@
 # Catalogue & Payment system
 
-This project is a concepts test for an ecommerce platform with the implementations of a dinamic catalogue and payment registration. The main object is the use of polymorphic associations.
+This project is a concepts test for an ecommerce platform with the application of a dinamic catalogue and payment registration. The main object is the implementation of polymorphic associations.
 
 ## Ruby & Rails version
 
@@ -75,6 +75,8 @@ rails g model CreditCard name
 rails g model Webpay name
 rails g model OneClick name
 ```
+
+In the models the associations are added just as:
 
 ```ruby
 class Payment < ApplicationRecord
