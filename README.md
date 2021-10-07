@@ -69,7 +69,7 @@ rails g model Paypal user_ip
 
 The transbank model will contain the polymorphic association connecting credit card, webpay and one click payment methods.
 
-```
+```console
 rails g model Transbank user_ip method:references{polymorphic}
 rails g model CreditCard name  
 rails g model Webpay name
