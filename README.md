@@ -6,7 +6,7 @@ This project is a concepts test for an eCommerce platform with the application o
   * [Ruby & Rails version](#ruby---rails-version)
   * [PART I](#part-i)
     + [1. Diagram model](#1-diagram-model)
-    + [2. Incorporating a dinamic catalogue](#1-incorporating-a-dinamic-catalogue)
+    + [2. Incorporating a dinamic catalogue](#1-incorporating-the-dinamic-catalogue)
     + [3. Incorporating the payment system](#2-incorporating-the-payment-system)
     + [4. Simulation](#3-simulation)
   * [PART II: Polymorphic associations](#part-ii--polymorphic-associations)
@@ -24,7 +24,7 @@ The next flowchart describes the final state of models incorporated below.
 
 ![diagram](/app/assets/images/diagram_last.png)
 
-### 2. Incorporating a dinamic catalogue 
+### 2. Incorporating the dinamic catalogue 
 
 The eCommerce has a product with two categories: digital and physical products. Digital will have one image while physical will have many. The models for each of them are generated as it follows:
 
