@@ -1,6 +1,14 @@
 # Catalogue & Payment system
 
-This project is a concepts test for an ecommerce platform with the application of a dinamic catalogue and payment registration. The main object is the implementation of polymorphic associations.
+This project is a concepts test for an eCommerce platform with the application of a dinamic catalogue and payment registration. The main object is the implementation of polymorphic associations.
+
+- [Catalogue & Payment system](#catalogue---payment-system)
+  * [Ruby & Rails version](#ruby---rails-version)
+  * [PART I](#part-i)
+    + [1. Incorporating a dinamic catalogue](#1-incorporating-a-dinamic-catalogue)
+    + [2. Incorporating the payment system](#2-incorporating-the-payment-system)
+    + [3. Simulation](#3-simulation)
+  * [PART II: Polymorphic associations](#part-ii--polymorphic-associations)
 
 ## Ruby & Rails version
 
@@ -11,7 +19,7 @@ This project is a concepts test for an ecommerce platform with the application o
 
 ### 1. Incorporating a dinamic catalogue 
 
-The ecommerce has a product with two categories: digital and physical products. Digital will have one image while physical will have many. The models for each of them are generated as it follows:
+The eCommerce has a product with two categories: digital and physical products. Digital will have one image while physical will have many. The models for each of them are generated as it follows:
 
 ```console
 rails g model Digital name
