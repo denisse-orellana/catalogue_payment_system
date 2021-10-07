@@ -17,6 +17,12 @@ This project is a concepts test for an eCommerce platform with the application o
 
 ## PART I
 
+### Diagram model
+
+The next flowchart describes the final state of models incorporated below.
+
+![diagram](/app/assets/images/diagram_last.png)
+
 ### 1. Incorporating a dinamic catalogue 
 
 The eCommerce has a product with two categories: digital and physical products. Digital will have one image while physical will have many. The models for each of them are generated as it follows:
