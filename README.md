@@ -171,9 +171,10 @@ One way of improve the previous code is with Duck Typing. This way provides a po
 First, let's remember that a **Polymorphic Association** is an Active Record association that connects a model to multiple other models, in other words, a model can belong to more than one other model, all of this on a single association. Duck Typing is an implemetation of polymorphism.
 
 Polymorphism example:
+
 ![diagram](/app/assets/images/polymorphism_example.png)
 
-**Duck Typing** is described as an object type which is not defined by what it is but *by what can do.* This means that allows any object to be passed into a method in order to run. Just remember:
+**Duck Typing** is described as an object type which is not defined by what it is but __*by what can do*__. This means that allows any object to be passed into a method in order to run. Just remember:
 
 > If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.
 
@@ -205,7 +206,9 @@ class Cow < Animal
         puts "moo mooo"
     end
 end  
+```
 
+```
 animal = Animal
 dog = Dog.new
 cat = Cat.new
