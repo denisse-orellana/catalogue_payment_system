@@ -225,7 +225,7 @@ class Cow < Animal
 end  
 ```
 
-```
+```ruby
 animal = Animal
 dog = Dog.new
 cat = Cat.new
