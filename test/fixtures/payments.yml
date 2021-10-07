@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  paymentcategory: one
+  paymentcategory_type: Paymentcategory
+
+two:
+  name: MyString
+  code: MyString
+  paymentcategory: two
+  paymentcategory_type: Paymentcategory
