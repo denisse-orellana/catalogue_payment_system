@@ -5,9 +5,10 @@ This project is a concepts test for an eCommerce platform with the application o
 - [Catalogue & Payment system](#catalogue---payment-system)
   * [Ruby & Rails version](#ruby---rails-version)
   * [PART I](#part-i)
-    + [1. Incorporating a dinamic catalogue](#1-incorporating-a-dinamic-catalogue)
-    + [2. Incorporating the payment system](#2-incorporating-the-payment-system)
-    + [3. Simulation](#3-simulation)
+    + [1. Diagram model](#1-diagram-model)
+    + [2. Incorporating a dinamic catalogue](#1-incorporating-a-dinamic-catalogue)
+    + [3. Incorporating the payment system](#2-incorporating-the-payment-system)
+    + [4. Simulation](#3-simulation)
   * [PART II: Polymorphic associations](#part-ii--polymorphic-associations)
 
 ## Ruby & Rails version
@@ -17,13 +18,13 @@ This project is a concepts test for an eCommerce platform with the application o
 
 ## PART I
 
-### Diagram model
+### 1. Diagram model
 
 The next flowchart describes the final state of models incorporated below.
 
 ![diagram](/app/assets/images/diagram_last.png)
 
-### 1. Incorporating a dinamic catalogue 
+### 2. Incorporating a dinamic catalogue 
 
 The eCommerce has a product with two categories: digital and physical products. Digital will have one image while physical will have many. The models for each of them are generated as it follows:
 
@@ -69,7 +70,7 @@ Product.create(name: 'secadora', description: 'seca', stock: 9, category: Physic
 Product.all
 ```
 
-### 2. Incorporating the payment system
+### 3. Incorporating the payment system
 
 The system includes three categories: Stripe, Transbank and Paypal. In addition, Transbank will have three payment methods: Credit Card, Webpay and One Click. The models are generated as it follows:
 
@@ -139,7 +140,7 @@ Transbank.create(user_ip: '678', method: OneClick.create(name: 'clicking'))
 Transbank.all
 ```
 
-### 3. Simulation 
+### 4. Simulation 
 
 The form simulation of the payment system is accomplished through the model Order. This model it is generated as:
 
