@@ -9,7 +9,7 @@ This project is a concepts test for an eCommerce platform with the application o
     + [2. Incorporating the dinamic catalogue](#2-incorporating-the-dinamic-catalogue)
     + [3. Incorporating the payment system](#3-incorporating-the-payment-system)
     + [4. Simulation](#4-simulation)
-  * [PART II: Polymorphic associations](#part-ii:--polymorphic-associations)
+  * [PART II: Polymorphic associations](#part-ii--polymorphic-associations)
 
 ## Ruby & Rails version
 
