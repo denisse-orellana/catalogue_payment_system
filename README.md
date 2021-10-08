@@ -9,7 +9,7 @@ This project is a concepts test for an eCommerce platform with the application o
     + [2. Incorporating the dinamic catalogue](#2-incorporating-the-dinamic-catalogue)
     + [3. Incorporating the payment system](#3-incorporating-the-payment-system)
     + [4. Simulation](#4-simulation)
-  * [PART II: Polymorphic associations](#part-ii--polymorphic-associations)
+  * [PART II: Polymorphic associations](#part-ii:--polymorphic-associations)
 
 ## Ruby & Rails version
 
@@ -74,7 +74,7 @@ Product.all
 
 The system includes three categories: Stripe, Transbank and Paypal. In addition, Transbank will have three payment methods: Credit Card, Webpay and One Click. The models are generated as it follows:
 
-The payment model will contain the polymorphic association connecting stripe, paypal and transbank payments.
+The payment model will contain the polymorphic association connecting stripe, paypal and transbank payments. Stripe, paypal and transbank will have many payments through paymentcategory.
 
 ```console
 rails g model Payment state total:decimal paymentcategory:references{polymorphic}
@@ -82,7 +82,7 @@ rails g model Stripe user_ip
 rails g model Paypal user_ip
 ```
 
-The transbank model will contain the polymorphic association connecting credit card, webpay and one click payment methods.
+The transbank model will contain the polymorphic association connecting credit card, webpay and one click payment methods. The CreditCard, Webpay and OneClick will have many transbanks through method.
 
 ```console
 rails g model Transbank user_ip method:references{polymorphic}
