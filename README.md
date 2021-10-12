@@ -142,24 +142,7 @@ Transbank.all
 
 ### 4. Simulation 
 
-The form simulation of the payment system is accomplished through the model Order. This model it is generated as:
-
-```console
-rails g scaffold Order number total:decimal state payment:references
-```
-
-```ruby
-<div class="field">
-<%= form.label :payment_id %>
-<%= form.collection_select :payment_id, Payment.all, :id, :paymentcategory_type %>
-</div>
-```
-
-```ruby
-def order_params
-    params.require(:order).permit(:number, :total, :state, payment_id: [])
-end
-```
+The form simulation of the payment system is accomplished through the model Order.
 
 ## PART II: Polymorphic associations
 
